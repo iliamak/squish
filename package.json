@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://iliamak.github.io/squish",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@jsquash/avif": "^1.1.0",
@@ -17,7 +20,8 @@
     "@jsquash/webp": "^1.2.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "gh-pages": "^6.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
